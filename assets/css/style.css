@@ -1,17 +1,31 @@
 /**
-* Template Name: Personal
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+* Template Name: Personal Website - Francisco Montenegro
+* Updated:07-08-2023 with Bootstrap v5.3.1
+/
+
+/**
+Css Variables
+**/
+
+@import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+
+:root {
+  --background-color:#333333;
+  --background-card-color:#1f3044;
+  --primary-text-color:#e8eae3;
+  --secondary-text-color2:#fa2742;
+  --enfasis-color:#fb9039;
+  --headings-font-family: 'Belanosima', sans-serif;
+}
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
-  background-color: #CECECE;
+  /* font-family: "Open Sans", sans-serif; */
+  /* font-family: 'IBM Plex Sans', sans-serif; */
+  font-family: 'Belanosima', sans-serif;
+  background-color:var(--background-color);
   color: #F7F5F7;
   position: relative;
   background: transparent;
@@ -20,7 +34,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #94A6B3  top right no-repeat;
+  background: var(--background-color)  top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -51,7 +65,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--headings-font-family);
 }
 
 /*--------------------------------------------------------------
