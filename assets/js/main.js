@@ -251,3 +251,22 @@
   new PureCounter();
 
 })()
+
+
+function toggleTheme() {
+  const themeLink = document.getElementById('theme');
+  const themeToggle = document.getElementById('themeToggle');
+  const isDarkMode = themeLink.href.endsWith('dark.css');
+  
+  if (isDarkMode) {
+      themeLink.href = 'css/light.css';
+      themeToggle.classList.remove('dark-mode');
+      themeToggle.classList.add('light-mode');
+      alert("Modo claro activado");
+  } else {
+      themeLink.href = 'css/dark.css';
+      themeToggle.classList.remove('light-mode');
+      themeToggle.classList.add('dark-mode');
+      alert("Modo oscuro activado");
+  }
+}

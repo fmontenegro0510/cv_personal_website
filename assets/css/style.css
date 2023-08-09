@@ -1202,3 +1202,32 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
+
+
+
+/* Dark and light mode */
+#themeToggle {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+#themeToggle i {
+  transition: transform 0.3s;
+}
+
+#themeToggle.dark-mode i[data-theme="dark"] {
+  display: none;
+}
+
+#themeToggle.light-mode i[data-theme="light"] {
+  display: none;
+}
+
+.dark-mode #themeToggle i[data-theme="dark"] {
+  display: inline-block;
+}
+
+.light-mode #themeToggle i[data-theme="light"] {
+  display: inline-block;
+}
